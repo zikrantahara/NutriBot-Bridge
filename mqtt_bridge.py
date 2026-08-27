@@ -29,7 +29,7 @@ def on_message(client, userdata, msg):
     firebase_path = ""
     if topic == "nutribot/sensor/volume_air": firebase_path = "/volume_air_persen.json"
     elif topic == "nutribot/sensor/level_nutrisi": firebase_path = "/level_nutrisi_persen.json"
-    elif topic == "nutribot/sensor/suhu": firebase_path = "/suhu_air.json"
+    elif topic == "nutribot/sensor/tds": firebase_path = "/tds.json"
     elif topic == "nutribot/sensor/ph": firebase_path = "/ph_air.json"
 
     if firebase_path:
